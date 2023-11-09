@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^ver_pelicula/([0-9]+)$ ver_pelicula.php?id=$1
+RewriteRule ^ver_imagen/([0-9]+)$ ver_imagen.php?id=$1
