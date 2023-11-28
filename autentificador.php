@@ -14,7 +14,7 @@ if (isset($_POST['usuario']) && isset($_POST['contrasena']) && !empty($_POST['us
 
 //Comprobamos que en la base de datos exista el usuario y que su contraseña sea esa, si es asi accedemos a consulta.
 
-    $stmt = $conexion->prepare('SELECT * FROM Usuarios WHERE NombreUsuario = :usuario AND Contrasena = :contrasena');
+    $stmt = $conexion->prepare('SELECT * FROM usuarios WHERE NombreUsuario = :usuario AND Contrasena = :contrasena');
     $stmt->bindParam(':usuario', $usuario);
     $stmt->bindParam(':contrasena', $contrasena);
     $stmt->execute();
@@ -36,3 +36,4 @@ if (isset($_POST['usuario']) && isset($_POST['contrasena']) && !empty($_POST['us
     exit;
 }
 ?>
+

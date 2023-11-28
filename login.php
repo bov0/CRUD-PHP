@@ -1,4 +1,11 @@
-<!DOCTYPE html>
+<?php
+session_start();
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Tu código de manejo del formulario y autentificación aquí
+}
+
+?>
 <html lang="es">
 
 <head>
@@ -84,8 +91,8 @@
         <input type="submit" value="Enviar">
         <a href="registro_usuario.php">¿Eres nuevo? Registrate.</a>
     </form>
+
     <?php
-    session_start();
     if (isset($_SESSION['error_msg'])) {
         echo "<p style='background-color: red; padding: 10px; border-radius: 8px;color:white'>" . $_SESSION['error_msg'] . "</p>";
         unset($_SESSION['error_msg']);

@@ -1,3 +1,7 @@
+<?php
+        session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -100,7 +104,6 @@
     </form>
     <?php
     //Si existe mensaje de error lo mostramos
-        session_start();
         if (isset($_SESSION['error_msg'])) {
             echo "<p style='background-color: red; padding: 10px; border-radius: 8px;color:white'>" . $_SESSION['error_msg'] . "</p>";
             unset($_SESSION['error_msg']);

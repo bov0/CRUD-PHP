@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo de peliculas</title>
+    <link rel="icon" type="image/vnd.microsoft.icon" href="ruta/nombrearchivo.ico">
     <style>
         body {
             margin: 0;
